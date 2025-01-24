@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export-and-deploy": "next build && cd infra && cdk deploy"
   },
   "dependencies": {
     "react": "^19.0.0",
