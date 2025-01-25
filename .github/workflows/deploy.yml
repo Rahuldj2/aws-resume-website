@@ -28,16 +28,20 @@ jobs:
         with:
           node-version: 18 # Adjust the Node.js version as needed
 
-        # Step 4: Install dependencies
-      - name: Install dependencies
+      # Step 4: Install root dependencies
+      - name: Install root dependencies
         run: npm install
 
-        # Step 5: Install CDK project dependencies
+      # Step 5: Install CDK CLI globally
+      - name: Install AWS CDK CLI
+        run: npm install -g aws-cdk
+
+      # Step 6: Install CDK project dependencies
       - name: Install CDK project dependencies
         run: |
           cd infra
           npm install
 
-        # Step 6: Build Next.js and deploy to S3
+      # Step 7: Build Next.js and deploy to S3
       - name: Build Next.js and deploy to S3
         run: npm run export-and-deploy
