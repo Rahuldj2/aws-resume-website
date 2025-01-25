@@ -32,19 +32,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install node modules in CDK
-        run: | 
-          cd infra 
-          npm install 
-          cd ..
-
       # Step 5: Build the Next.js project
-      - name: Build Next.js
-        run: next build
+      - name: Build Next.js and deploy to s3
+        run: npm run export-and-deploy
 
       # Step 6: Navigate to the infra folder and deploy with CDK
-      - name: Deploy AWS infrastructure for S3
-        run: |
-          cd infra
-          npm install
-          cdk deploy --require-approval never
+      # - name: Deploy AWS infrastructure for S3
+      #   run: |
+      #     cd infra
+      #     npm install
+      #     cdk deploy --require-approval never

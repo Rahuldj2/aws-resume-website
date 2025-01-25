@@ -1,5 +1,3 @@
-"use client"
-
 import React, { useEffect, useState } from "react"
 import { FaGithub, FaLinkedin} from "react-icons/fa"
 import { SiLeetcode } from "react-icons/si"
@@ -37,7 +35,7 @@ const Portfolio = () => {
               Projects
             </a>
             <a href="#contact" className="hover:text-blue-400 transition-colors">
-              Contact
+              Contact Details
             </a>
           </div>
         </nav>
