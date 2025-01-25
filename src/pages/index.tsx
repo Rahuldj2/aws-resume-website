@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useState } from "react"
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
+import { FaGithub, FaLinkedin} from "react-icons/fa"
 import { SiLeetcode } from "react-icons/si"
 
 const Portfolio = () => {
