@@ -35,7 +35,7 @@ const Portfolio = () => {
               Projects
             </a>
             <a href="#contact" className="hover:text-blue-400 transition-colors">
-              Contact Details
+              Profiles
             </a>
           </div>
         </nav>
@@ -113,7 +113,7 @@ const Portfolio = () => {
 
 
         <section id="contact" className="mb-16">
-          <h2 className="text-4xl font-bold mb-6 text-blue-400">Contact</h2>
+          <h2 className="text-4xl font-bold mb-6 text-blue-400">Profiles</h2>
           <div className="bg-gray-700 rounded-lg shadow-xl p-6">
             <p className="text-xl mb-4">Feel free to reach out to me for any opportunities or collaborations!</p>
             <div className="flex space-x-4">
