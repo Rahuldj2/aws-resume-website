@@ -88,10 +88,8 @@ const Portfolio = () => {
     >
       <h3 className="text-2xl font-semibold mb-2">A.S.U.R (Attendance System Using Recognition)</h3>
       <p className="text-gray-300">
-        • Collaborated closely with a team of seven and developed an advanced attendance management system integrating geofencing,
-        facial recognition, and real-time tracking for precise classroom attendance recording and management.<br></br>
-        • Engineered SQL database and Next.js API endpoints; spearheaded brainstorming sessions to enhance precise indoor
-        geolocation tracking. Utilized location smoothing techniques and achieved high accuracy despite using free APIs.
+        • Developed an attendance system with geofencing, facial recognition, and real-time tracking.<br />
+        • Built SQL database and Next.js APIs; achieved accurate geolocation tracking using free APIs.
       </p>
     </a>
     <a 
@@ -102,14 +100,13 @@ const Portfolio = () => {
     >
       <h3 className="text-2xl font-semibold mb-2">ENVIFUND</h3>
       <p className="text-gray-300">
-        • Developed a decentralized crowdfunding application utilizing blockchain technology and smart contracts to enable secure
-        and transparent transactions, specifically targeting various environmental initiatives.<br></br>
-        • Implemented the user interface with Next.js, and utilized JIRA for project management, effectively handling user stories,
-        sprint planning, and task tracking to ensure smooth project execution and timely delivery.
+        • Built a blockchain-based crowdfunding app for environmental initiatives.<br />
+        • Used Next.js for the UI and JIRA for sprint planning and task tracking.
       </p>
     </a>
   </div>
 </section>
+
 
 
         <section id="contact" className="mb-16">

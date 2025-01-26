@@ -45,3 +45,8 @@ jobs:
       # Step 7: Build Next.js and deploy to S3
       - name: Build Next.js and deploy to S3
         run: npm run export-and-deploy
+
+      # Step 8: Invalidate CloudFront cache
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
